@@ -13,7 +13,7 @@ import java.util.List;
 import static fun.mcbee.plugin.qbskyblock.BlockRelace.BlockReplacementEngine.checkBlockReplace;
 
 public class BlockBreakListener implements Listener {
-    List<String> resourceWorlds = Arrays.asList("farm_world", "desert_world", "island_world", "skyblock_world", "world", "lobby");
+    List<String> resourceWorlds = Arrays.asList("farm_world", "desert_world", "island_world", "world", "lobby");
 
     @EventHandler
     public void onResourceWorlds(BlockBreakEvent e) {
