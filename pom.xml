@@ -78,7 +78,7 @@
             <groupId>fun.mcbee.api</groupId>
             <artifactId>HoneyAPI</artifactId>
             <version>1.0.4</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>

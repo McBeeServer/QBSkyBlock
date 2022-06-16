@@ -51,7 +51,6 @@ public final class QBSkyblock extends JavaPlugin {
     public void onLoad() {
         getInstance();
 
-
     }
     @Override
     public void onEnable() {
@@ -60,12 +59,11 @@ public final class QBSkyblock extends JavaPlugin {
         ItemManager.init();
 
 
+
     }
 
     @Override
     public void onDisable() {}
 
-    private void loadCommands() {
-    }
 
 }
