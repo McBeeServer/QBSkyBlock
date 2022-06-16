@@ -1,7 +1,8 @@
 package fun.mcbee.plugin.qbskyblock;
 
 import fun.mcbee.plugin.qbskyblock.BlockRelace.BlockBreakListener;
-import fun.mcbee.plugin.qbskyblock.ScoreBoard.ScoreBoardSystem;
+import fun.mcbee.plugin.qbskyblock.Items.ItemManager;
+import fun.mcbee.plugin.qbskyblock.TablistandScoreBoard.ScoreBoardSystem;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -56,6 +57,7 @@ public final class QBSkyblock extends JavaPlugin {
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(new ScoreBoardSystem(), this);
         Bukkit.getPluginManager().registerEvents(new BlockBreakListener(), this);
+        ItemManager.init();
 
 
     }

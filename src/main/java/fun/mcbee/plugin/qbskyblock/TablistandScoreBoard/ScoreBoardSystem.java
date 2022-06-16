@@ -1,4 +1,4 @@
-package fun.mcbee.plugin.qbskyblock.ScoreBoard;
+package fun.mcbee.plugin.qbskyblock.TablistandScoreBoard;
 
 import fun.mcbee.api.honeyapi.ScoreBoard.BeeScoreboard;
 import fun.mcbee.plugin.qbskyblock.QBSkyblock;
