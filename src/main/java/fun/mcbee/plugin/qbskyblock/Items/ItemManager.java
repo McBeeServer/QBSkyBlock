@@ -1,26 +1,27 @@
 package fun.mcbee.plugin.qbskyblock.Items;
 
+import fun.mcbee.plugin.qbskyblock.QBSkyblock;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.event.Listener;
 import org.bukkit.inventory.*;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemManager {
+public class ItemManager{
 
     public static ItemStack WheatBag;
 
     public static void init(){
         createWheatBag();
-
     }
 
     private static void createWheatBag(){
-        ItemStack wheatbag = new ItemStack(Material.STICK, 1);
+        ItemStack wheatbag = QBSkyblock.getAPI().getItemHead("50930");
         ItemMeta wheatbagmeta = wheatbag.getItemMeta();
         wheatbagmeta.setDisplayName("§6Wheat Bag");
         List<String> lore = new ArrayList<>();
@@ -31,10 +32,10 @@ public class ItemManager {
         wheatbag.setItemMeta(wheatbagmeta);
         WheatBag = wheatbag;
 
-        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("wheatbag"), wheatbag);
-        sr.shape("  S",
-                "  S",
-                "  S");
+        ShapedRecipe sr = new ShapedRecipe(new NamespacedKey(QBSkyblock.getInstance(), "wheatbag"), wheatbag);
+        sr.shape("   ",
+                " SS",
+                " SS");
         sr.setIngredient('S', Material.WHEAT);
         Bukkit.getServer().addRecipe(sr);
     }
