@@ -135,7 +135,7 @@ public class BlockBreakListener implements Listener {
                 true,
                 Material.BEDROCK,
                 Sound.UI_LOOM_TAKE_RESULT,
-                300,
+                360,
                 Material.OAK_WOOD,
                 null,
                 null
